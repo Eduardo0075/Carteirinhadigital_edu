@@ -25,11 +25,11 @@ fun CarteirinhaScreen(
 ) {
     Box {
         Image(
-            painter = painterResource(id = R.drawable.fundo),
+            painter = painterResource(id = R.drawable.fv),
             contentDescription = "Fundo",
             modifier = Modifier
                 .fillMaxSize()
-                .alpha(0.5f),
+                ,
             contentScale = ContentScale.Crop
         )
         Column(

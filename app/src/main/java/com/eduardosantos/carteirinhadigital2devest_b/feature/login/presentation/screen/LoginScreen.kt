@@ -1,6 +1,7 @@
 package com.eduardosantos.carteirinhadigital2devest_b.feature.login.presentation.screen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -22,6 +23,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -38,6 +40,10 @@ import com.eduardosantos.carteirinhadigital2devest_b.R
 import com.eduardosantos.carteirinhadigital2devest_b.feature.login.domain.model.UsuarioLogado
 import com.eduardosantos.carteirinhadigital2devest_b.feature.login.presentation.LoginEvent
 import com.eduardosantos.carteirinhadigital2devest_b.feature.login.presentation.LoginViewModel
+import androidx.compose.foundation.background
+import com.eduardosantos.carteirinhadigital2devest_b.core.designsystem.theme.errorLight
+import com.eduardosantos.carteirinhadigital2devest_b.core.designsystem.theme.primaryDark
+import androidx.compose.material3.OutlinedTextFieldDefaults
 
 @Composable
 fun LoginScreen(
@@ -62,6 +68,7 @@ fun LoginScreen(
         verticalArrangement = Arrangement.Center,
         modifier = modifier
             .fillMaxSize()
+            .background(errorLight)
             .padding(24.dp)
     ) {
         Image(
@@ -91,6 +98,17 @@ fun LoginScreen(
             },
             singleLine = true,
             isError = uiState.erroMessage != null,
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = primaryDark,
+                unfocusedBorderColor = primaryDark,
+                focusedLabelColor = primaryDark,
+                unfocusedLabelColor = primaryDark,
+                cursorColor = primaryDark,
+                focusedTextColor = primaryDark,
+                unfocusedTextColor = primaryDark,
+                focusedContainerColor = Color.White,
+                unfocusedContainerColor = Color.White
+            ),
             modifier = Modifier.fillMaxWidth(0.85f)
         )
 
@@ -108,6 +126,14 @@ fun LoginScreen(
             visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             isError = uiState.erroMessage != null,
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = primaryDark,
+                cursorColor = primaryDark,
+                focusedTextColor = primaryDark,
+                unfocusedTextColor = primaryDark,
+                focusedContainerColor = Color.White,
+                unfocusedContainerColor = Color.White
+            ),
             modifier = Modifier.fillMaxWidth(0.85f)
         )
 

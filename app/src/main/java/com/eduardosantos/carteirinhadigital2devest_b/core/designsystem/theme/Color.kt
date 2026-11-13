@@ -5,22 +5,22 @@ import androidx.compose.ui.graphics.Color
 // PALETA BASE — ESMERALDA / PRATA
 // =====================================================
 
-private val Emerald900 = Color(0xFF003D2E)
-private val Emerald800 = Color(0xFF005A43)
-private val Emerald700 = Color(0xFF007A5A)
-private val Emerald600 = Color(0xFF00966E)
-private val Emerald500 = Color(0xFF00B383)
-private val Emerald200 = Color(0xFF9AF2D3)
-private val Emerald100 = Color(0xFFD7FFF1)
+private val Emerald900 = Color(0xFF000000)
+private val Emerald800 = Color(0xFFEFEFEF)
+private val Emerald700 = Color(0xFF000000)
+private val Emerald600 = Color(0xFFFF3A3A)
+private val Emerald500 = Color(0xFF000000)
+private val Emerald200 = Color(0xFF1F1F1F)
+private val Emerald100 = Color(0xFFBB2F2F)
 
-private val Silver50 = Color(0xFFF8FAF9)
+private val Silver50 = Color(0xFFA92828)
 private val Silver100 = Color(0xFFF1F4F3)
 private val Silver200 = Color(0xFFE2E7E5)
 private val Silver300 = Color(0xFFC7CFCC)
-private val Silver600 = Color(0xFF66706D)
-private val Silver800 = Color(0xFF2A312F)
+private val Silver600 = Color(0xFF000000)
+private val Silver800 = Color(0xFF000000)
 
-private val DarkBg = Color(0xFF0E1412)
+private val DarkBg = Color(0xFF000000)
 private val DarkSurface = Color(0xFF161D1A)
 
 private val Error = Color(0xFFDC362E)
@@ -35,14 +35,14 @@ val onPrimaryLight = Color.White
 val primaryContainerLight = Emerald100
 val onPrimaryContainerLight = Emerald900
 
-val secondaryLight = Color(0xFF4A635B)
+val secondaryLight = Color(0xFF000000)
 val onSecondaryLight = Color.White
-val secondaryContainerLight = Color(0xFFD4E8DF)
+val secondaryContainerLight = Color(0xFF191A1A)
 val onSecondaryContainerLight = Color(0xFF0F1F1A)
 
-val tertiaryLight = Color(0xFF2F6F77)
+val tertiaryLight = Color(0xFF1E1E1E)
 val onTertiaryLight = Color.White
-val tertiaryContainerLight = Color(0xFFC9F0F4)
+val tertiaryContainerLight = Color(0xFF000000)
 val onTertiaryContainerLight = Color(0xFF001F23)
 
 val errorLight = Error
@@ -56,7 +56,7 @@ val surfaceLight = Silver50
 val onSurfaceLight = Color(0xFF171D1B)
 
 val surfaceVariantLight = Silver200
-val onSurfaceVariantLight = Color(0xFF424947)
+val onSurfaceVariantLight = Color(0xFF000000)
 
 val outlineLight = Silver600
 val outlineVariantLight = Silver300

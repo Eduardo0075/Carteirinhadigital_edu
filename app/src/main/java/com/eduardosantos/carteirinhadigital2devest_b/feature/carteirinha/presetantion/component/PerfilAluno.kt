@@ -23,7 +23,7 @@ import com.eduardosantos.carteirinhadigital2devest_b.R
 fun PerfilAluno(
     nome: String,
     curso: String,
-    idFoto: Int = R.drawable.login
+    idFoto: Int = R.drawable.gm
 ) {
     Column(
         verticalArrangement = Arrangement.spacedBy(10.dp),
